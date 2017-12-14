@@ -1,0 +1,163 @@
+*
+{
+	margin:0;
+}
+
+body{
+	background: #02010a;
+	color: white;
+	font-size: 16px;
+	font-family: 'Dancing Script';
+  font-size: 14pt;
+	margin-top: 150%, -5%;
+	-webkit-animation: slide 1s forwards;
+}
+
+@-webkit-keyframes slide{
+	0%{margin-top: 150%}
+	60%{margin-top: -5%}
+	100%{margin-top: 0%}
+}
+
+#contenidopagina{
+	width: 900px;
+	margin: 0 auto;
+  min-height: 200px;
+}
+
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px #02010a;
+  padding: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+}
+#tituloCabecera{
+  width: 70%;
+  text-indent: 15px;
+}
+#links{
+  width: 30%;
+  font-size: 18pt;
+}
+#links a, #links a:hover{
+  color: #fff;
+  padding: 5px 10px;
+}
+
+#links a + a::before {
+  color: #fff;
+  text-decoration: none;
+}
+#links .pagina-actual{
+  text-decoration: none;
+}
+
+#imagencentral{
+  background: #82c3a6;
+	padding: 20px;
+
+}
+img{
+  width: 100%;
+}
+#secundaria{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background: #d5c75f;
+  min-height: 100px;
+  padding: 20px 0;
+}
+.imgSecundaria{
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.columna2{
+  width: 33.33%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.imgPaisaje{
+  border: 2px solid black;
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  transition: transform 2s;
+}
+.imgPaisaje:hover{
+  transform: rotate(10deg);
+}
+.imgRetrato{
+  border: 2px solid black;
+  -webkit-filter:drop-shadow(3px 3px 6px #82c3a6);
+  filter: drop-shadow(3px 3px 6px #82c3a6);
+  transition: transform 2s;
+}
+.imgRetrato:hover{
+  transform: translate(20px, -5px);
+}
+
+footer{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background-color: #C6d5c5;
+  padding: 15px 0;
+  color: black;
+  border-radius: 0 0 10px 10px;
+}
+footer .columnafooter{
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.iconoredes{
+  width: 15px;
+}
+
+.imagen1{
+  -webkit-filter:blur(10px);
+}
+.imagen2{
+  -webkit-filter:grayscale(100%);
+}
+.imagen3{
+  -webkit-filter:sepia(90%);
+}
+.imagen4{
+  -webkit-filter:grayscale(100%);
+}
+.imagen5{
+
+}
+.imagen6{
+  -webkit-filter:grayscale(100%);
+}
+
+@media screen and (max-width: 1000px){
+	#contenidopagina{
+		width: 100%;
+		margin: 0 auto;
+	}
+  #links, #tituloCabecera{
+    width: 100%;
+    text-align: center;
+  }
+  .imgSecundaria{
+    width: 100%;
+  }
+  .columna2{
+    width: 100%;
+  }
+  footer .columnafooter{
+    width: 100%;
+  }
+}
